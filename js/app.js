@@ -2,7 +2,7 @@ $(document).ready(function(){
 	   //vars
 	   var location='Merina bay sand , Merlion , Jurong West Street 63 , 606566  <i class="fas fa-map-marker-alt"></i>';
 	   var webContent="Let's hit the road again as OCBC Cycle Singapore 2011 rides into town! Join us for the cycling event of the year as the fun goes on for three days in a row ,starting form 4  March! Adding to the thrill is the Professional Criterisum";
-
+       var noEvent="Currently No Upcoming Events!";
 	   //website onclick event
 	  $('.click-info').on('click',function(){
           // window.alert();
@@ -25,4 +25,13 @@ $(document).ready(function(){
 	  	  	  $('.pop-up').fadeOut();
 	  	  }
 	  });
+
+	  // similar event on click
+	  $('#similar-event').on('click',function(){
+	  	    $('.pop-up').fadeIn();
+            $('#text').html(noEvent);
+
+	  });
 });
+
+
